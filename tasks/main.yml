@@ -8,19 +8,25 @@
     state: latest
     update_cache: yes
   with_items: "{{ upgrade_distpackages }}"
+  # Ignore ansible-lint warning about "latest"
+  tags:
+  - skip_ansible_lint
 
 - name: system | current running kernel
   command: uname -r
   register: running_kernel_version
-  always_run: True
+  check_mode: no
   changed_when: False
 
 # http://serverfault.com/a/601432
 - name: system | latest installed kernel
   shell: rpm -q kernel --qf '%{BUILDTIME} %{VERSION}-%{RELEASE}.%{ARCH}\n' | tail -n 1 | cut -f 2 -d ' '
   register: latest_kernel_version
-  always_run: True
+  check_mode: no
   changed_when: False
+  # Ignore ansible-lint warning about using rpm (this is just a query)
+  tags:
+  - skip_ansible_lint
 
 - name: system | check if reboot needed
   set_fact:
