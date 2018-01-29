@@ -4,6 +4,9 @@
 # List of packages to upgrade
 upgrade_distpackages: "*"
 
+# List of package specifications to exclude from upgrade
+upgrade_distpackages_excludes: []
+
 # Automatically reboot if running kernel is different from the latest installed?
 upgrade_distpackages_reboot_kernel: False
 
