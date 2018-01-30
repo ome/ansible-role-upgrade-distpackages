@@ -1,6 +1,9 @@
 Upgrade Distribution packages
 =============================
 
+[![Build Status](https://travis-ci.org/openmicroscopy/ansible-role-upgrade-distpackages.svg)](https://travis-ci.org/openmicroscopy/ansible-role-upgrade-distpackages)
+[![Ansible Role](https://img.shields.io/ansible/role/14871.svg)](https://galaxy.ansible.com/openmicroscopy/upgrade-distpackages/)
+
 Upgrades all packages installed with the distribution's package manager.
 Optionally reboots the system if a kernel update was found.
 
