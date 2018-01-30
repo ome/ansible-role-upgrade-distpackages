@@ -11,6 +11,7 @@ Role Variables
 Optional variables:
 
 - `upgrade_distpackages`: List of packages to upgrade (default: all)
+- `upgrade_distpackages_excludes`: List of package specifications to exclude from upgrade
 - `upgrade_distpackages_reboot_kernel`: Automatically reboot if a new kernel is installed (default `False`)
 - `upgrade_distpackages_reboot_timeout`: Maximum time to wait for a reboot (default `600` seconds)
 
