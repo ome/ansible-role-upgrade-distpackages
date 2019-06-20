@@ -1,4 +1,5 @@
 galaxy_info:
+  role_name: upgrade_distpackages
   author: ome-devel@lists.openmicroscopy.org.uk
   description: Upgrades all packages installed with the distribution's package manager
   company: Open Microscopy Environment
