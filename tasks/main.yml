@@ -34,7 +34,7 @@
 - name: system | check if reboot needed
   set_fact:
     system_reboot_needed: >-
-     "{{ running_kernel_version.stdout != latest_kernel_version.stdout }}"
+     {{ running_kernel_version.stdout != latest_kernel_version.stdout }}
 
 - debug:
     msg: >-
