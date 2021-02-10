@@ -1,7 +1,7 @@
 Upgrade Distribution packages
 =============================
 
-[![Build Status](https://travis-ci.org/ome/ansible-role-upgrade-distpackages.svg)](https://travis-ci.org/ome/ansible-role-upgrade-distpackages)
+[![Actions Status](https://github.com/ome/ansible-role-upgrade-distpackages/workflows/Molecule/badge.svg)](https://github.com/ome/ansible-role-upgrade-distpackages/actions)
 [![Ansible Role](https://img.shields.io/ansible/role/41406.svg)](https://galaxy.ansible.com/ome/upgrade_distpackages/)
 
 Upgrades all packages installed with the distribution's package manager.
