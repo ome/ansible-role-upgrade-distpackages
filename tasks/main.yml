@@ -52,11 +52,11 @@
   when: upgrade_distpackages_reboot_kernel and system_reboot_needed
 
 - name: system | wait for server to reboot
-  local_action:
-    module: wait_for
+  wait_for:
     delay: 15
     host: "{{ ansible_host | default(inventory_hostname) }}"
     port: "{{ ansible_port | default(22) }}"
     state: "started"
     timeout: "{{ upgrade_distpackages_reboot_timeout }}"
+  delegate_to: localhost
   when: upgrade_distpackages_reboot_kernel and system_reboot_needed
