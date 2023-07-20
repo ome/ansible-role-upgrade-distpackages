@@ -11,6 +11,7 @@ galaxy_info:
     - name: EL
       versions:
         - 7
+  namespace: ome
   galaxy_tags: []
 
 dependencies: []
