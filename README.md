@@ -2,7 +2,7 @@ Upgrade Distribution packages
 =============================
 
 [![Actions Status](https://github.com/ome/ansible-role-upgrade-distpackages/workflows/Molecule/badge.svg)](https://github.com/ome/ansible-role-upgrade-distpackages/actions)
-[![Ansible Role](https://img.shields.io/ansible/role/41406.svg)](https://galaxy.ansible.com/ome/upgrade_distpackages/)
+[![Ansible Role](https://img.shields.io/badge/ansible--galaxy-upgrade_distpackages-blue.svg)](https://galaxy.ansible.com/ui/standalone/roles/ome/upgrade_distpackages/)
 
 Upgrades all packages installed with the distribution's package manager.
 Optionally reboots the system if a kernel update was found.
