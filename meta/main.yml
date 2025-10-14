@@ -6,7 +6,7 @@ galaxy_info:
     Upgrades all packages installed with the distribution's package manager
   company: Open Microscopy Environment
   license: BSD
-  min_ansible_version: 2.2
+  min_ansible_version: 2.11
   platforms:
     - name: EL
       versions:
