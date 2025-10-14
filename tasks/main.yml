@@ -52,7 +52,7 @@
   when: upgrade_distpackages_reboot_kernel and system_reboot_needed
 
 - name: system | wait for server to reboot
-  wansible.builtin.ait_for:
+  wansible.builtin.wait_for:
     delay: 15
     host: "{{ ansible_host | default(inventory_hostname) }}"
     port: "{{ ansible_port | default(22) }}"
