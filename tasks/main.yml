@@ -3,11 +3,10 @@
 
 - name: system packages | upgrade
   become: true
-  ansible.builtin.yum:
+  ansible.builtin.dnf:
     name: "{{ item }}"
     exclude: "{{ upgrade_distpackages_excludes | join(',') }}"
     state: latest
-    update_cache: true
   with_items: "{{ upgrade_distpackages }}"
   # Ignore ansible-lint warning about "latest"
   tags:
